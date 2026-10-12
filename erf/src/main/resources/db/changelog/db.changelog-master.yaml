@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: changes/001-create-correction-tasks.yaml
+      relativeToChangelogFile: true
+  - include:
+      file: changes/002-add-scheduler-index.yaml
+      relativeToChangelogFile: true

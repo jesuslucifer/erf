@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 002-add-scheduler-index
+      author: error-free-text
+      changes:
+        - sql:
+            sql: >-
+              CREATE INDEX idx_tasks_new_created_at
+              ON correction_tasks (created_at)
+              WHERE status = 'NEW';
+            splitStatements: false
+            stripComments: true
